@@ -13,10 +13,10 @@ Hệ thống hoạt động qua nhiều bước liên kết với nhau, từ ti�
 Hệ thống gồm 4 bước chính:
 ```mermaid
 flowchart TD
-  A["<b>Bước 1: Tiếp nhận dữ liệu</b></br>Kiểm tra chủ đề và nội dung đầu vào"]
-  B["<b>Bước 2: AI giải thích Feynman</b></br>Giải thích kiến thức đơn giản, có ví dụ"]
-  C["<b>Bước 3: Kiểm tra kiến thức</b></br>Đặt câu hỏi và nhận câu trả lời sinh viên"]
-  D["<b>Bước 4: Chấm điểm Rubric</b></br>Chấm điểm, nhận xét và đề xuất cải thiện"]
+  A("<b>Bước 1: Tiếp nhận dữ liệu</b></br>Kiểm tra chủ đề và nội dung đầu vào")
+  B("<b>Bước 2: AI giải thích Feynman</b></br>Giải thích kiến thức đơn giản, có ví dụ")
+  C("<b>Bước 3: Kiểm tra kiến thức</b></br>Đặt câu hỏi và nhận câu trả lời sinh viên")
+  D("<b>Bước 4: Chấm điểm Rubric</b></br>Chấm điểm, nhận xét và đề xuất cải thiện")
 
   A --> B
   B --> C
