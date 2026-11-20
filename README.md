@@ -13,14 +13,19 @@ Hệ thống hoạt động qua nhiều bước liên kết với nhau, từ ti�
 Hệ thống gồm 4 bước chính:
 ```mermaid
 flowchart TD
-  A("<b>Bước 1: Tiếp nhận dữ liệu</b></br>Kiểm tra chủ đề và nội dung đầu vào")
-  B("<b>Bước 2: AI giải thích Feynman</b></br>Giải thích kiến thức đơn giản, có ví dụ")
-  C("<b>Bước 3: Kiểm tra kiến thức</b></br>Đặt câu hỏi và nhận câu trả lời sinh viên")
-  D("<b>Bước 4: Chấm điểm Rubric</b></br>Chấm điểm, nhận xét và đề xuất cải thiện")
+  A["<b>Bước 1: Tiếp nhận dữ liệu</b></br>Kiểm tra chủ đề và nội dung đầu vào"]
+  B["<b>Bước 2: AI giải thích Feynman</b></br>Giải thích kiến thức đơn giản, có ví dụ"]
+  C["<b>Bước 3: Kiểm tra kiến thức</b></br>Đặt câu hỏi và nhận câu trả lời sinh viên"]
+  D["<b>Bước 4: Chấm điểm Rubric</b></br>Chấm điểm, nhận xét và đề xuất cải thiện"]
 
   A --> B
   B --> C
   C --> D
+
+  style A fill:#e8f0fe,stroke:#d2e3fc,color:#1f1f1f,rx:10,ry:10
+  style B fill:#e6f4ea,stroke:#ceead6,color:#1f1f1f,rx:10,ry:10
+  style C fill:#ffffff,stroke:#dadce0,color:#1f1f1f,rx:10,ry:10
+  style D fill:#ffffff,stroke:#dadce0,color:#1f1f1f,rx:10,ry:10
 ```
 ## 3. Xây dựng các Prompt thực thi
 ### Prompt 1: Tiếp nhận và kiểm tra dữ liệu
